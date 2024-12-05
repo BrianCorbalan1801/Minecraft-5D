@@ -6,3 +6,12 @@ CREATE TABLE Estructura (
     FOREIGN KEY (biomas_ID) REFERENCES Bioma(ID),
     FOREIGN KEY (dimension_ID) REFERENCES Dimension(ID)
 );
+
+------------------------------------------------------------
+-----------------------NUEVO--------------------------------
+------------------------------------------------------------
+
+
+
+SELECT m.nombre_bioma from Estructura e 
+join Bioma m on m.id = e.biomas_ID
